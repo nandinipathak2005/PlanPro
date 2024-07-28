@@ -1,0 +1,266 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #fadde1;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.progress-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.circular-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.circular-progress-bg,
+.circular-progress-bar {
+    fill: none;
+    stroke-width: 15;
+    stroke-linecap: round;
+}
+
+.circular-progress-bg {
+    stroke: #ddd;
+}
+
+.circular-progress-bar {
+    stroke: #E75480;
+    stroke-dasharray: 879; /* Circumference of the circle (2 * π * r) */
+    stroke-dashoffset: 879; /* Start with full length (unfilled) */
+    transition: stroke-dashoffset 0.5s linear;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.timer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.timer-display {
+    font-size: 10px; /* Reduced font size for display text */
+    color: #333;
+    margin-bottom: 20px;
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 50px;  /* Adjusted width */
+    padding: 8px; /* Reduced padding */
+    font-size: 10px; /* Further reduced font size */
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 5px;
+    outline: none;
+}
+
+.input-group span {
+    font-size: 20px; /* Slightly reduced size for better balance */
+    color: #333;
+}
+.timer-display {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background: #E75480;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #A94064;
+}
+
+.btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.alert-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.alert-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.alert-container button {
+    padding: 20px 40px;
+    background: #E75480;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 100%;
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .progress-container {
+        max-width: 200px;
+    }
+
+    .circular-progress {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+
+    .input-group input {
+        width: 40px;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .input-group span {
+        font-size: 16px;
+    }
+
+    .timer-display {
+        font-size: 24px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .alert-container {
+        padding: 15px;
+    }
+
+    .alert-container p {
+        font-size: 16px;
+    }
+
+    .alert-container button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .progress-container {
+        max-width: 150px;
+    }
+
+    .circular-progress {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .form-container {
+        padding: 5px;
+    }
+
+    .input-group input {
+        width: 30px;
+        padding: 3px;
+        font-size: 10px;
+    }
+
+    .input-group span {
+        font-size: 14px;
+    }
+
+    .timer-display {
+        font-size: 20px;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .alert-container {
+        padding: 10px;
+    }
+
+    .alert-container p {
+        font-size: 14px;
+    }
+
+    .alert-container button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Water Tracker</h1>
+        <div class="tracker">
+            <div class="glass">
+                <div id="glass-fill" class="glass-fill"></div>
+                <div class="inner-glass">
+                    <div id="water-count" class="count">0</div>
+                    <div class="label">Glasses</div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="add-water-button" class="btn">Add Glass</button>
+            <button id="reset-water-button" class="btn reset">Reset</button>
+        </div>
+        <div id="kudos-message" class="kudos-message"></div>
+        <div class="date-input">
+            <input type="date" id="date-input">
+            <button id="log-water-button" class="btn">Log Water</button>
+        </div>
+        <div id="water-log" class="water-log">
+            <br>
+            <h2>Water Consumption Log</h2><br>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

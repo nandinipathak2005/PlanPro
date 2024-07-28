@@ -1,0 +1,159 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #fadde1;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+h2 {
+    text-align:center;
+}
+
+.tracker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.glass {
+    width: 120px;
+    height: 200px;
+    border: 4px solid #007bff;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.glass-fill {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: lightblue;
+    height: 0;
+    transition: height 0.3s;
+}
+
+.inner-glass {
+    width: 100px;
+    height: 180px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.count {
+    font-size: 48px;
+    color: #007bff;
+}
+
+.label {
+    font-size: 18px;
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background: #E75480;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #b52a32;
+}
+
+.btn.reset {
+    background: #E75480;
+}
+
+.btn.reset:hover {
+    background: #b52a32;
+}
+
+.date-input {
+    margin: 20px 0;
+}
+
+.date-input input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px;
+}
+
+.kudos-message {
+    color: black;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.water-log {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.water-log h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.water-log .log-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.water-log .log-entry button {
+    background: #c21807;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+}
